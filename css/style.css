@@ -1,0 +1,165 @@
+/* 전체 디자인 설정 */
+body {
+    font-size: 18px;
+    color: #121212;
+}
+
+/* 문서 전체에서 사용되는 것들*/
+.innerWrap {
+    width: 1240px;
+    margin: 0 auto;
+    padding: 80px 20px 0;
+}
+
+.ffJosefin {
+    font-family: "Roboto Slab", serif;
+}
+
+/* header */
+header {
+    background: url(../image/hero.jpg) no-repeat right center/cover;
+}
+
+header .innerWrap {
+    height: 720px;
+    position: relative;
+}
+
+
+header h1 {
+    padding-top: 120px;
+
+}
+
+header .scroll {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+}
+
+header .scroll img {
+    margin-top: 8px;
+}
+
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    width: 1240px;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* main 영역 */
+
+main h2 {
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: .05em;
+    margin-bottom: 80px;
+}
+
+.msgSec {
+    background-color: #fbfaf7;
+}
+
+.msgSec p {
+    text-align: center;
+    line-height: 1.75;
+    /*margin-bottom: 40px;*/
+}
+
+/* 일러스트 뒤에 배치하겠다.*/
+.msgSec p.illust::before {
+    content: url(../image/deco_left.png);
+    position: relative;
+    left: 50px;
+}
+
+.msgSec p.illust::after {
+    content: url(../image/deco_right.png);
+    position: relative;
+    right: 50px;
+}
+
+/* dateArea 영역*/
+.dateSec {
+    background-color: #ffffff;
+    padding-bottom: 120px;
+    margin-bottom: 480px;
+}
+
+.dateSec .layoutWrap {
+    display: flex;
+}
+
+.dateSec .layoutWrap > p { /* layoutWrap 아래에 있는 p 태그에만 지정*/
+    flex-basis: 735px;
+}
+
+.dateSec .layoutWrap > div {
+    flex-basis: 465px;
+    padding-top: 100px;
+}
+
+.dateSec .dateDetailSec {
+    font-size: 72px;
+    margin: 0 0 170px -100px;
+    background-color: white;
+    padding: 40px 64px;
+    line-height: 1.2;
+}
+
+.word1 {
+    font-size: 50px;
+}
+
+.word2 {
+    font-size: 40px;
+}
+
+.word3 {
+    font-size: 60px;
+}
+
+.accessSec {
+    margin-left: 50px;
+}
+
+.accessSec h3 {
+    font-size: 55px;
+    color: #cfafa3;
+    letter-spacing: .05em;
+    margin-bottom: 8px;
+}
+
+.accessSec p {
+    line-height: 1.6;
+}
+
+.dateSec::after {
+    content: "";
+    position: fixed;
+    background: url(../image/bg_sp.jpg) no-repeat center/cover;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* form 영역 작성 */
